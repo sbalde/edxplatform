@@ -61,17 +61,36 @@ from microsite_configuration import microsite
           </div>
           % endif
 
+<!--<section id="vision" class="content-block content-1-3">
+ <p>Assurer une éducation équitable, inclusive et de qualité et un apprentissage <br/> tout au long de la vie pour tous. Transformer les vies grâce à l'éducation </p
+<hr></hr>
+</section>-->
+
+
 <!--start Content Block 1-3 -->
     <section id="content-1-3" class="content-block content-1-3">
                 <div class="container">
                         <div class="row">
+
+                                 <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 copy-wrapper">
+
+                                     <p class="copy">
+                                     "We partner with world-class companies to create digital educational programs for
+                                     learners to develop the skills needed by employers today. We connect learners to job opportunities
+                                     and we provide the connection to employers and teach the skills needed to fill the gap in today’s
+                                     job market."
+                                     <hr></hr>
+                                     </p>
+
+                                </div>
+                                
                                 <div class="col-md-12">
                                         
                                         <div class="underlined-title">
                                                 <div class="editContent">
-                                                <h1>Every service under one roof</h1>
+                                                <h2>Our services</h2>
                                                 </div>
-                                                <hr>
+                                                
                                 </div>
                                                         
                                         <div class="services-wrapper">
@@ -80,7 +99,7 @@ from microsite_configuration import microsite
                                                                 <span class="fa fa-laptop"></span>
                                                         </div>
                                                         <div class="editContent">
-                                                                <h4>Digital Design</h4>
+                                                                <h3>Digital Design</h3>
                                                         </div>
                                                         <div class="editContent">
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
@@ -91,7 +110,7 @@ from microsite_configuration import microsite
                                                                 <span class="fa fa-code"></span>
                                                         </div>
                                                         <div class="editContent">
-                                                                <h4>Web Development</h4>
+                                                                <h3>Web Development</h3>
                                                         </div>
                                                         <div class="editContent">
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
@@ -102,7 +121,7 @@ from microsite_configuration import microsite
                                                                 <span class="fa fa-rocket"></span>
                                                         </div>
                                                         <div class="editContent">
-                                                                <h4>Creative Direction</h4>
+                                                                <h3>Creative Direction</h3>
                                                         </div>
                                                         <div class="editContent">
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem.</p>
@@ -126,6 +145,7 @@ from microsite_configuration import microsite
 
       % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
         <section class="courses">
+            <h2>The most popular courses</h2>
             <ul class="courses-listing">
             ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
             %for course in courses[:settings.HOMEPAGE_COURSE_MAX]:
@@ -161,6 +181,7 @@ from microsite_configuration import microsite
 
             <div class="row">
                <!-- Feature Box 1-->
+                <h2>Learning at Guandal</h2>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="feature-box">
                         <div class="icon">
